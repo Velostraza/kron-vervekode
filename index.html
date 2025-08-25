@@ -1,623 +1,48 @@
-Hopp til innhold
-Chattehistorikk
-
-Du sa:
-Hjelp meg lage en nettside for å dele KRON koden min slik at jeg kan få verve-penger 
-ChatGPT sa:
-
-Tenkte i 1m 6s
-Nice! Jeg har laget en ferdig, én-fil nettside du kan bruke som landingsside for KRON-vervekoden din. Den ligger i canvasen ved siden av som index.html — klar til å publiseres.
-
-Kort bruksguide:
-
-Bytt til din kode + lenke
-
-I filen: endre DEFAULT_CODE til vervekoden din og DEFAULT_REF_URL til den offisielle vervelenken fra KRON.
-
-Publiser gratis
-
-GitHub Pages: Opprett et repo, legg inn index.html, gå til Settings → Pages og aktiver.
-
-Vercel/Netlify: Dra-og-slipp index.html i et nytt prosjekt.
-
-Del smart
-
-Bruk “Del denne siden”-knappen, eller kopier URL. QR-koden gjør det lett å dele fysisk.
-
-(Valgfritt) Måling
-
-Legg inn Plausible/GA (kommentar i koden viser hvor). Siden teller også lokale klikk i nettleseren din (ingen data sendes ut).
-
-Hva den inneholder:
-
-Stor “Kopier kode”-knapp, “Åpne KRON med koden”, QR-kode, og delingsknapper (WhatsApp, Messenger, Facebook, X, Telegram, e-post).
-
-Uoffisiell-/risiko-disclaimer, enkel og mørk stil, mobilvennlig, og Web Share API-støtte der det finnes.
-
-Mulighet til å overstyre kode via URL ?code=DINCODE (praktisk hvis du vil teste variasjoner).
-
-Vil du at jeg også:
-
-tilpasser tekst/design med navn/bilder dine,
-
-legger på din egen favicon og Open Graph-bilde for pen forhåndsvisning,
-
-eller setter opp GitHub Pages/Vercel-oppsett steg-for-steg,
-
-så gjør jeg det nå.
-
-Du sa:
-Vi er nødt til å gjøre teksten litt mer vennlig og bruk gjerne kron sine mer mørke-lille ish farger (søk dem opp). Skriv heller: Bruker du verve-koden får vi begge 200kr i bonus! Tusen takk for støtten! Poenget om historisk avkastning er ingen garanti er bra, behold det. Eller s er det bra
-ChatGPT sa:
-
-Tenkte i 1m 49s
-
-Tenkte i 15s
-Klappet og klart! Jeg har:
-
-gjort teksten vennligere og byttet hovedbudskapet til: “Bruker du verve-koden får vi begge 200 kr i bonus! Tusen takk for støtten!”
-
-beholdt risikoteksten om at historisk avkastning ikke er noen garanti (som du ønsket).
-
-justert designet til et mørk-lilla uttrykk inspirert av Krons oppdaterte profil (ny logo og farger) og brukte en lys “magnolia”-tekstfarge (#F7F1FF) som harmonerer med profilen. 
-Kron
-Brandfetch
-
-Slik ser endringene ut i canvasen (index.html):
-
-Nytt hovedbudskap i hero-feltet.
-
-Oppdatert fargepalett i :root (dyp lilla bakgrunn, mørk-lilla kort, lilla accent).
-
-Lilla gradient i logo-ruten og bakgrunnsglød.
-
-Delingstekst oppdatert: når man deler, står det nå at begge får 200 kr.
-
-Vil du at jeg også skal:
-
-legge inn din faktiske vervekode og vervelenke direkte i filen,
-
-justere lilla-tonen enda nærmere Krons nåværende UI (f.eks. litt mørkere accent),
-
-eller lage et enkelt Open Graph-bilde (for pen forhåndsvisning på Facebook/X)?
-
-Du sa:
-Endre vervekoden til: a4k5v
-
-Endre vervelenken til: https://kron.no/app/invitert/a4k5v
-ChatGPT sa:
-
-Tenkte i 47s
-Ferdig! 🙌
-
-Vervekoden er satt til a4k5v.
-
-Vervelenken er satt til https://kron.no/app/invitert/a4k5v (knappen, QR-koden og delingen peker dit).
-
-Fikset også en liten CSS-typole i logo-stilen.
-
-Vil du at jeg skal generere et pent Open Graph-bilde (for Facebook/X/Messenger) med koden din og lilla bakgrunn, så det ser proft ut i delinger?
-
-Du sa:
-Ja
-ChatGPT sa:
-
-Tenkte i 1m 8s
-Supert — jeg har laget et pent Open Graph-bilde i riktig format (1200×630) med mørk-lilla bakgrunn, stor kode og teksten om 200 kr bonus. Jeg la også inn bildeadressen i <meta property="og:image"> og twitter:image i HTML-en, og fikset feilen i kode-visningen på siden.
-
-Last ned og legg bildet ved siden av index.html før du publiserer:
-
-
-Når du har pushet begge filene til GitHub Pages/Vercel/Netlify, vil delinger på Facebook/X/Messenger vise kortet automatisk.
-
-Ønsker du også en liten favicon i samme stil, eller et kvadratisk app-ikon (512×512) for Android/iOS “Add to Home Screen”?
-
-Du sa:
-Fortell meg nå hva jeg gjør for å publisere nettsiden (første gang, så vær nøye)
-ChatGPT sa:
-
-Tenkte i 44s
-Konge! Her er en supernøye “første-gangs-guide” for å få siden din ut på nett. Velg A (GitHub Pages) eller B (Netlify Drop). Begge er gratis for en enkel statisk side som vår.
-
-Alternativ A: GitHub Pages (anbefalt hvis du har/ønsker GitHub)
-Forbered filene
-
-Last ned bildet: .
-
-Last ned HTML-en fra canvasen som index.html (kopiér alt og lagre som index.html).
-
-Legg begge i én mappe på PC-en: f.eks. kron-vervekode/.
-
-Lag GitHub-konto (om du ikke har): github.com → Sign up.
-
-Nytt repo
-
-Klikk New → Repository name: kron-vervekode → Create repository.
-
-Last opp filene
-
-I repoet: Add file → Upload files → dra inn index.html og og-kron-a4k5v.png → Commit changes.
-
-Slå på Pages
-
-Settings → Pages (i sidebaren).
-
-Under “Build and deployment”: Source = Deploy from a branch.
-
-Branch = main og / (root) → Save.
-
-Finn nettadressen
-
-GitHub viser en grønn “Your site is live at …” i Pages-panelet når den er klar.
-
-Typisk URL: https://<brukernavn>.github.io/kron-vervekode/.
-
-Test
-
-Åpne URL-en. Kopier-knappen, “Åpne KRON med koden”, QR-koden og delingsknapper skal fungere.
-
-Del gjerne linken med en venn og sjekk at de ser koden a4k5v.
-
-Del pent på sosiale medier
-
-Når siden deles, skal forhåndsvisning bruke bildet og-kron-a4k5v.png. (Noen plattformer cache’er — om forhåndsvisningen ikke oppdateres, prøv på nytt etter en liten stund eller bruk plattformenes “debugger”.)
-
-Alternativ B: Netlify Drop (null kode/ingen GitHub)
-Forbered en zip
-
-I mappen kron-vervekode/ skal du ha index.html og og-kron-a4k5v.png.
-
-Høyreklikk mappen → Komprimer/Zip til kron-vervekode.zip.
-
-Gå til Netlify (lag gratis konto).
-
-Velg Deploy site / Drag & drop og slipp kron-vervekode.zip.
-
-Når deploy er ferdig, får du en URL ala https://navn-tilfeldig.netlify.app/.
-
-Test og del (som i GitHub-stegene over).
-
-Sjekkliste etter publisering
-Knappen “Åpne KRON med koden” peker til: https://kron.no/app/invitert/a4k5v (vi har allerede satt det i koden).
-
-Koden på siden viser a4k5v.
-
-QR-koden åpner samme vervelenke på mobil.
-
-Deling på Facebook/X/Messenger henter og-kron-a4k5v.png (kan ta litt før forhåndsvisning oppdateres første gang).
-
-URL-parametre funker om du vil teste varianter:
-
-?code=xyz endrer det som vises (kun front-end).
-
-?ref=https://… kan midlertidig peke knappen til en annen lenke (nyttig for testing).
-
-Neste småting (valgfritt, men kjekt)
-Eget domene:
-
-GitHub Pages: Settings → Pages → “Custom domain”. Peker domenet til username.github.io (A/ALIAS eller CNAME).
-
-Netlify: Domain settings → Add custom domain (Netlify gir deg DNS-pekere).
-
-Måling: Opprett Plausible og legg inn skriptet (se kommentaren nederst i index.html).
-
-Favicon/app-ikon: Si fra, så lager jeg kjapt et 512×512-ikon og legger inn <link rel="icon">.
-
-Trenger du at jeg pusher dette for deg via GitHub Pages (steg 1–6) — jeg kan skrive en superenkel oppskrift for GitHub-appen på PC også.
-
-Du sa:
-Det bilde som heter og-kron-a4k5v.png ble bra, men teksten stikker utenfor boksen, det kan vi ikke ha.
-ChatGPT sa:
-
-Tenkte i 1m 13s
-Fixet! Jeg har laget en ny versjon der all tekst måles og wraps innenfor boksen (ingen overflow). Jeg justerte også fontstørrelser bittelitt og tegner “pill”-boksen ut fra faktisk teksthøyde/bredde.
-
-Last ned og bytt ut filen før du publiserer på nytt:
-
-
-Tips: Delingsplattformer cacher ofte bilder. Etter at du har lastet opp nytt bilde, kan du:
-
-poste linken på nytt etter litt tid, eller
-
-bruke plattformenes “debugger”/“card validator” for å tvinge refresh.
-
-Du sa:
-Opplastet bilde
- Koden må nå flyttes litt opp. 
-
-Hva gjorde du med kodingen nå? Sa ikke noe om at du skulle jobbe med den nå?
-ChatGPT sa:
-
-Tenkte i 25s
-Godt innspill — jeg har flyttet koden opp i OG-bildet så den ligger tettere på “KRON-vervekode”-labelen og mer balansert i kortet.
-
-Ny fil, klar til opplasting:
-
-
-Når det gjelder “kodingen”: Beklager hvis det virket som jeg gjorde noe uten å si fra. Jeg gjorde bare dette i forrige runde:
-
-Rendret kun OG-bildet på nytt (for å hindre tekst-overflow) og beholdt samme filnavn.
-
-HTML-koden i canvas ble ikke endret utover at vi tidligere la inn <meta property="og:image" ...>; jeg gjorde ingen nye endringer i index.html nå.
-
-Si fra om du vil ha koden enda litt nærmere toppen eller midtstilt vertikalt—jeg justerer det umiddelbart.
-
-
-
-Du sa:
-Opplastet bilde
-Vervekoden er fortsatt utenfor den runde boksen. 
-ChatGPT sa:
-
-Tenkte i 35s
-Takk for at du pekte på det! Du har helt rett — koden lå fortsatt litt utenfor “pill”-boksen.
-
-Jeg har oppdatert OG-bildet med:
-
-større innvendig padding og ekstra sikkerhetsmargin i boksen
-
-vertikal sentrering av koden inni boksen
-
-litt høyere plassering totalt, så layouten sitter bedre
-
-Last ned den nye filen og erstatt hos deg:
-
-
-For ordens skyld: jeg endret bare selve bildet (generert på nytt). HTML-filen i canvas er uendret. Hvis du vil flytte/skalere koden enda mer, si hvor du vil ha den (f.eks. “10 px lenger ned” eller “smalere pill”), så tweaker jeg akkurat slik du vil.
-
-
-
-Du sa:
-Bra, under ansvarsfraskrivelse. Skriv at dette etter Krons egne regler skal merkes reklame når delt i sosiale medier. (Sånn for sikkerhets skyld).
-ChatGPT sa:
-
-Tenkte i 29s
-Lagt inn! Under Ansvarsfraskrivelse står det nå at deling i sosiale medier med vervekode/lenke bør merkes som reklame/annonse, i tråd med Krons regler.
-
-Vil du at jeg også legger en liten “#reklame”-påminnelse ved Del-knappen, eller en tooltip som minner om dette før deling?
-
-Du sa:
-Opplastet bilde
-Ikke ha de dollar tegna der.
-ChatGPT sa:
-
-Tenkte i 17s
-Fixet! Jeg har fjernet $1 og $2 fra teksten i ansvarsfraskrivelsen. Oppdater siden din (refresh) og sjekk at det ser riktig ut.
-
-Vil du at jeg også legger inn en liten “#reklame”-påminnelse ved Del-knappen, eller holder vi det kun i ansvarsfraskrivelsen?
-
-Du sa:
-Opplastet bilde
-Prøver nå å publisere nettsiden. Hva nå?  Du beskreiver ingenting om disse menyene i fremgangsmetoden som (skulle være nøyaktig)
-ChatGPT sa:
-
-Tenkte i 45s
-Kult — du er på riktig sted. Gjør dette, punkt for punkt, akkurat slik som i bildet ditt:
-
-1) Fyll ut skjemaet “Create a new repository”
-Owner: La den stå på din bruker (f.eks. Velostrazza).
-
-Repository name: kron-vervekode (som du har).
-
-Description: Valgfritt (f.eks. “Uoffisiell landingsside for KRON-vervekode”).
-
-Choose visibility: Public.
-
-Add README: Sett On (anbefalt – da får du en main-branch med én gang).
-
-Add .gitignore: No .gitignore (la stå).
-
-Add license: No license (la stå).
-
-Klikk Create repository.
-
-2) Last opp filene
-På repo-siden: Klikk Add file → Upload files.
-
-Dra inn index.html (fra canvas-koden du har lagret lokalt) og og-kron-a4k5v.png (lastet ned fra lenken jeg ga deg). Begge skal ligge i rotmappen (ikke i en undermappe).
-
-Skriv en commit-melding (f.eks. “Add site”) og klikk Commit changes.
-
-Viktig: Filnavnet må være index.html (helt små bokstaver), ellers blir ikke siden vist.
-
-3) Slå på GitHub Pages
-Gå til Settings → Pages (i sidebaren).
-
-Under Build and deployment:
-
-Source: velg Deploy from a branch.
-
-Branch: velg main og /(root).
-
-Klikk Save.
-
-Øverst i seksjonen dukker det opp en lenke til siden din når alt er klart, typisk:
-https://<brukernavn>.github.io/kron-vervekode/
-Klikk den for å åpne siden.
-
-4) Sjekk at alt ser riktig ut
-Ser du koden a4k5v, knappen “Åpne KRON med koden” går til https://kron.no/app/invitert/a4k5v, og QR-koden fungerer?
-
-Del siden på f.eks. Messenger/Facebook — forhåndsvisningen skal vise og-kron-a4k5v.png (Open Graph-bildet vi lagde).
-
-Vanlige feil (kjapp sjekk)
-404 eller hvit side? Sjekk at Pages bruker main / root, at repo er Public, og at filen heter index.html i roten.
-
-Ingen forhåndsvisning i sosiale medier? De cache’r ofte. Prøv å poste lenken på nytt.
-
-Bildet ikke lastes? Sjekk at og-kron-a4k5v.png ligger i roten (samme nivå som index.html), og at meta-taggene peker til og-kron-a4k5v.png.
-
-Hvis du vil, kan du sende meg repo-URL-en din, så sanity-checker jeg Pages-innstillingene og at filene ligger riktig.
-
-Du sa:
-Jeg vet ikke om jeg er på repo-siden en gang, slutt å bruke ''kode-terminologi'' det er for dumt når det er første gang jeg gjør det her
-ChatGPT sa:
-
-Tenkte i 23s
-Got it — jeg dropper all “kodeprat” og tar deg gjennom dette i helt enkle steg fra skjermen du viser.
-
-Fra siden du er på nå (Create a new repository)
-Eier/Owner: la den stå som den er (din bruker).
-
-Navn/Repository name: kron-vervekode (bra).
-
-Visibility: velg Public.
-
-Add README: slå på (skyveknappen til høyre).
-
-La .gitignore stå som “No .gitignore”, og License som “No license”.
-
-Trykk den grønne Create repository-knappen.
-
-Etterpå (du kommer til prosjekt-siden din)
-Finn knappen Add file (øverst til høyre), klikk den og velg Upload files.
-
-Dra inn to filer:
-
-index.html (fra canvasen vår – lagret på PC-en din)
-
-og-kron-a4k5v.png (lastet ned fra meg)
-Begge skal ligge “øverst” – ikke i noen mappe.
-
-Rull ned og trykk Commit changes (grønn knapp) for å lagre opplastingen.
-
-Gjør siden synlig på nett
-Klikk fanen Settings (øverst, ved siden av “Code”).
-
-I menyen til venstre: klikk Pages.
-
-Under “Build and deployment”:
-
-Source: velg Deploy from a branch.
-
-Branch: velg main og /(root).
-
-Trykk Save.
-
-På samme side vises en lenke til nettsiden din når den er klar, f.eks.
-https://DittBrukernavn.github.io/kron-vervekode/
-Klikk den.
-
-Sjekk at alt stemmer
-Siden viser koden a4k5v og knappen åpner https://kron.no/app/invitert/a4k5v.
-
-Bildet i sosiale medier skal være det lilla vi lagde (hvis ikke, prøv å poste lenken på nytt).
-
-Hvis du vil, kan du skrive hva du ser øverst på siden etter “Create repository”-klikket (knappetekster osv.), så peker jeg deg nøyaktig til riktig knapp neste steg.
-
-Du sa:
-Opplastet bilde
-Ad file? 
-ChatGPT sa:
-
-Tenkte i 26s
-Jepp — du er på riktig side nå.
-
-Gjør akkurat dette:
-
-Last opp filene
-
-Klikk Add file (øverst til høyre) → Upload files.
-(Hvis du ikke finner knappen: i den blå boksen midt på siden, klikk teksten “uploading an existing file”.)
-
-Dra inn to filer fra PC-en: index.html og og-kron-a4k5v.png.
-
-Rull ned og trykk den grønne Commit changes-knappen.
-
-Slå på nettsiden
-
-Øverst på siden: klikk Settings → i venstremenyen velger du Pages.
-
-Under “Build and deployment”:
-
-Source: velg Deploy from a branch
-
-Branch: velg main og /(root)
-
-Trykk Save
-
-Åpne siden
-
-Etter et øyeblikk vises en lenke på samme Pages-side, typisk
-https://DittBrukernavn.github.io/kron-vervekode/. Klikk den.
-
-Sjekk at siden viser koden a4k5v, knappen åpner https://kron.no/app/invitert/a4k5v, og at bildet lastes. Trenger du at jeg peker på nøyaktig hvor “Add file” står i din visning, si fra hva du ser øverst til høyre (ved siden av “Go to file”).
-
-Du sa:
-Ser ikke denne add file du nevner
-ChatGPT sa:
-
-Tenkte i 49s
-Helt vanlig at du ikke ser Add file når repoet er tomt. Bruk én av disse to super-enkle måtene fra skjermen du er på nå:
-
-Metode A (lettest): Bruk den blå lenken “uploading an existing file”
-Midt på siden ser du boksen “Quick setup — if you’ve done this kind of thing before”.
-På første linje i den boksen står det:
-“Get started by creating a new file or uploading an existing file.”
-
-Klikk “uploading an existing file” (det er en blå lenke).
-
-Dra inn to filer fra PC-en:
-
-index.html (kopiert fra canvas og lagret hos deg)
-
-og-kron-a4k5v.png (lastet ned fra meg)
-
-Scroll ned og trykk Commit changes (grønn knapp).
-
-Metode B (hvis du ikke finner lenken): Lag index.html først
-I samme “Quick setup”-boks: klikk “creating a new file” (blå lenke).
-
-Øverst, skriv filnavn index.html.
-
-Lim inn hele HTML-koden fra canvas.
-
-Scroll ned og trykk Commit new file (grønn knapp).
-
-Nå dukker Add file → Upload files opp på hovedsiden. Klikk det og last opp og-kron-a4k5v.png.
-
-Commit changes.
-
-Slå på nettsiden (etter at filene er inne)
-Gå til fanen Settings (øverst).
-
-Venstre meny → Pages.
-
-Under “Build and deployment”:
-
-Source: Deploy from a branch
-
-Branch: main og /(root)
-
-Save
-
-Det dukker opp en lenke til siden, typisk:
-https://DittBrukernavn.github.io/kron-vervekode/
-
-Si ifra hva du ser hvis du står fast på et trinn (f.eks. hvilken tekst/knapp øverst på siden), så peker jeg deg nøyaktig videre.
-
-Du sa:
-Opplastet bilde
- Hva nå?
-ChatGPT sa:
-
-Tenkte i 42s
-Supert – du er på riktig Pages-side nå. Gjør dette:
-
-Sjekk at oppsettet stemmer (du er der allerede)
-
-Source: “Deploy from a branch”
-
-Branch: main og /(root)
-
-Enforce HTTPS: krysset av
-(La Custom domain stå tomt.)
-
-Har du lagt inn filene?
-
-Klikk fanen Code øverst til venstre.
-
-Ser du index.html og og-kron-a4k5v.png i listen?
-
-Ja: Gå til steg 3.
-
-Nei: Klikk Add file → Upload files (eller i “Quick setup”-boksen: uploading an existing file). Dra inn index.html og og-kron-a4k5v.png → grønn Commit changes.
-
-Publiser-lenken
-
-Gå tilbake til Settings → Pages. Øverst i seksjonen vil det stå “Your site is live at …” med en blå lenke (f.eks. https://<brukernavn>.github.io/kron-vervekode/). Klikk den.
-
-Hurtigsjekk
-
-Åpner siden og viser koden a4k5v?
-
-Knappen går til https://kron.no/app/invitert/a4k5v?
-
-Del siden på Messenger/Facebook – ser du det lilla bildet? (Hvis ikke: prøv å poste lenken på nytt eller bruk plattformens “link debugger”.)
-
-Hvis du ikke får opp “Your site is live”-lenken etter at index.html ligger på plass:
-
-Gå til Code, åpne README.md, trykk blyant-ikonet, skriv inn “publish”, grønn Commit changes. Gå så tilbake til Settings → Pages og se etter lenken igjen.
-
-Skriv gjerne hva du ser i Code-fanen nå (filnavnene i lista), så peker jeg deg nøyaktig videre.
-
-Du sa:
-Opplastet bilde
-De er inne
-ChatGPT sa:
-
-Tenkte i 28s
-Nice — ser bra ut! Det er bare én ting å fikse før siden vises:
-
-1) Gi HTML-filen riktig navn
-Akkurat nå heter den kron_vervekode_enkel_landingsside_index.html. Den må hete index.html.
-
-Slik gjør du:
-
-Klikk på filnavnet kron_vervekode_enkel_landingsside_index.html.
-
-Klikk ⋯ oppe til høyre → Rename
-(eller klikk blyant-ikonet, og endre filnavnet i feltet øverst).
-
-Skriv nøyaktig: index.html.
-
-Rull ned og trykk Commit changes (grønn knapp).
-
-Sjekk at og-kron-a4k5v.png ligger i samme liste (øverst i mappen). Det gjør den hos deg – perfekt.
-
-2) Åpne nettsiden
-Gå til Settings → Pages (venstremeny).
-
-Der står det en lenke “Your site is live at …” – klikk den.
-(Du kan også klikke Deployments → github-pages → View deployment på høyresiden.)
-
-3) Hurtigsjekk
-Ser du koden a4k5v på siden?
-
-Knappen åpner https://kron.no/app/invitert/a4k5v?
-
-Del lenken i Messenger/Facebook — får du det lilla bildet? (Hvis ikke, prøv å poste lenken på nytt.)
-
-Rop ut hvis noe skurrer på et av trinnene, så peker jeg deg til riktig knapp i din visning.
-
-Du sa:
-Opplastet bilde
-ChatGPT sa:
-
-Tenkte i 42s
-Perfekt – alt ligger riktig. Nå gjør du dette:
-
-Åpne selve nettsiden
-
-Høyre side under Deployments: klikk github-pages → View deployment.
-
-Eller: Settings → Pages → øverst står det “Your site is live at …” – klikk lenken.
-
-Adressen blir typisk: https://velostrazza.github.io/kron-vervekode/.
-
-Test kjapt
-
-Ser du koden a4k5v?
-
-“Åpne KRON med koden” går til https://kron.no/app/invitert/a4k5v?
-
-Del lenken i Messenger/Facebook og sjekk at det lilla bildet vises.
-
-Rydd (valgfritt, men lurt)
-
-Du har både index.html og kron_vervekode_enkel_landingsside_index.html. Siden bruker bare index.html.
-
-Slett den lange: klikk filen → … (oppe til høyre) → Delete file → grønn Commit changes.
-
-Vil du at jeg også legger inn en liten “#reklame”-påminnelse ved Del-knappen på selve siden?
-
-Du sa:
-Ja
-ChatGPT sa:
-
-Tenkte i 1m 18s
-Kron Vervekode – Enkel Landingsside (index
-· html
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bruk min KRON-vervekode – tusen takk!</title>
+  <meta name="description" content="Bruker du vervekoden får vi begge 200 kr i bonus! Tusen takk for støtten. Investering innebærer risiko, og historisk avkastning er ingen garanti for fremtidig avkastning." />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Bruk min KRON-vervekode – tusen takk!" />
+  <meta property="og:description" content="Bruker du vervekoden får vi begge 200 kr i bonus! Tusen takk for støtten." />
+  <meta property="og:image" content="og-kron-a4k5v.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:image" content="og-kron-a4k5v.png" />
+  <meta property="og:site_name" content="KRON-vervekode (uoffisiell)" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="theme-color" content="#1a1033" />
+
+  <style>
+    :root{
+      --bg: #0f0b1a;         /* dyp lilla/svart bakgrunn */
+      --card: #151125;       /* kortbakgrunn i mørk lilla */
+      --text: #f7f1ff;       /* lys tekst (magnolia) */
+      --muted: #c9c3d7;      /* sekundærtekst */
+      --accent: #7c3aed;     /* lilla accent */
+      --accent-strong:#6d28d9;
+      --border: #262339;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 50% -200px, rgba(124,58,237,.18), transparent), var(--bg);
+      color:var(--text);
+      line-height:1.5;
+    }
+    .container{max-width:960px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between; gap:12px;margin-bottom:24px}
+    .brand{display:flex;align-items:center;gap:10px}
+    .logo{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#7C3AED,#A78BFA);color:#0b0b0c}
+    .brand h1{font-size:18px;margin:0}
+    main{display:grid;gap:24px}
 
     .hero{display:grid; gap:12px}
     .title{font-size:clamp(28px,5vw,44px);line-height:1.1;margin:0;font-weight:800}
@@ -686,7 +111,7 @@ Kron Vervekode – Enkel Landingsside (index
           </div>
           <div class="btns">
             <a class="btn primary" id="openLink" href="#" target="_blank" rel="noopener">Åpne KRON med koden</a>
-            <button class="btn" id="shareBtn" title="Husk å merke som #reklame/annonse når du deler">Del denne siden<\/button> <span class="pill" id="adPill" aria-hidden="true">#reklame<
+            <button class="btn" id="shareBtn" title="Husk å merke som #reklame/annonse når du deler">Del denne siden<\/button> <span class="pill" id="adPill" aria-hidden="true">#reklame<\/span>
           </div>
           <p class="mini" id="hint">Slik gjør du: 1) Trykk <em>Kopier</em> 2) Åpne KRON 3) Lim inn ved registrering.</p>
         </div>
@@ -738,8 +163,99 @@ Kron Vervekode – Enkel Landingsside (index
     // Valgfritt: legg til UTM-sporing på din EGEN sideadresse (ikke KRON-lenken) når du deler.
 
     // === INGEN ENDRING NEDENFOR ER NØDVENDIG ===
+    const params = new URLSearchParams(location.search);
+    const CODE = (params.get('code') || DEFAULT_CODE).trim();
+    const REF_URL = (params.get('ref') || DEFAULT_REF_URL).trim();
 
+    // Sett inn i UI
+    const codeEl = document.getElementById('code');
+    const copyBtn = document.getElementById('copyBtn');
+    const openLink = document.getElementById('openLink');
+    const shareBtn = document.getElementById('shareBtn');
+    const shareLinks = document.getElementById('shareLinks');
+    const clicksPill = document.getElementById('clicks-pill');
 
-Ingen fil valgtIngen fil valgt
-ChatGPT kan gjøre feil. Sjekk viktig informasjon.
-ChatGPT genererer fortsatt et svar ...
+    codeEl.textContent = CODE;
+    openLink.href = REF_URL;
+
+    // Klikkteller lokalt (anonymt, kun i din nettleser)
+    const KEY = 'kron-ref-clicks';
+    let clicks = Number(localStorage.getItem(KEY) || '0');
+    function renderClicks(){
+      clicksPill.textContent = clicks + (clicks === 1 ? ' klikk' : ' klikk');
+    }
+    renderClicks();
+    openLink.addEventListener('click', () => {
+      clicks++; localStorage.setItem(KEY, String(clicks)); renderClicks();
+    });
+
+    // Kopier kode
+    copyBtn.addEventListener('click', async () => {
+      try{
+        await navigator.clipboard.writeText(CODE);
+        copyBtn.textContent = 'Kopiert!';
+        setTimeout(()=>copyBtn.textContent='Kopier',1200);
+      }catch(e){
+        // Fallback
+        const t = document.createElement('textarea');
+        t.value = CODE; document.body.appendChild(t); t.select();
+        document.execCommand('copy'); t.remove();
+        copyBtn.textContent = 'Kopiert!';
+        setTimeout(()=>copyBtn.textContent='Kopier',1200);
+      }
+    });
+
+    // Del side (Web Share API)
+    shareBtn.addEventListener('click', async () => {
+      if(!confirm('Husk å merke som #reklame/annonse når du deler i sosiale medier. Fortsette?')) return;
+      const shareData = {
+        title: 'KRON‑vervekode',
+        text: 'Bruk min KRON‑vervekode (vi får begge 200 kr!): ' + CODE,
+        url: location.href
+      };
+      if(navigator.share){
+        try{ await navigator.share(shareData); }catch{ /* avbrutt */ }
+      } else {
+        // fallback: kopier URL
+        try{
+          await navigator.clipboard.writeText(location.href);
+          shareBtn.textContent = 'Lenke kopiert!';
+          setTimeout(()=>shareBtn.textContent='Del denne siden',1200);
+        }catch{}
+      }
+    });
+
+    // QR-kode av KRON-lenken (så folk åpner riktig sted)
+    new QRCode(document.getElementById('qrcode'), {
+      text: REF_URL,
+      width: 196,
+      height: 196,
+      colorDark : "#f4f4f5",
+      colorLight : "#0e0e10",
+      correctLevel : QRCode.CorrectLevel.M
+    });
+
+    // Delingsknapper (for denne siden)
+    const pageUrl = encodeURIComponent(location.href);
+    const pageText = encodeURIComponent('Bruk min KRON‑vervekode: ' + CODE);
+    const links = [
+      {name:'WhatsApp', href:`https://api.whatsapp.com/send?text=${pageText}%20${pageUrl}`},
+      {name:'Messenger', href:`https://www.facebook.com/dialog/send?link=${pageUrl}&app_id=87741124305`},
+      {name:'Facebook', href:`https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`},
+      {name:'X', href:`https://twitter.com/intent/tweet?text=${pageText}&url=${pageUrl}`},
+      {name:'Telegram', href:`https://t.me/share/url?url=${pageUrl}&text=${pageText}`},
+      {name:'E‑post', href:`mailto:?subject=Min%20KRON‑vervekode&body=${pageText}%0A${pageUrl}`}
+    ];
+    links.forEach(l=>{
+      const a=document.createElement('a'); a.textContent=l.name; a.href=l.href; a.target='_blank'; a.rel='noopener'; shareLinks.appendChild(a);
+    });
+
+    // År i footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // --- ANALYTICS (valgfritt) ---
+    // For Plausible: legg inn under, bytt example.com med ditt domene
+    // <script defer data-domain="example.com" src="https://plausible.io/js/script.js"></script>
+  </script>
+</body>
+</html>
