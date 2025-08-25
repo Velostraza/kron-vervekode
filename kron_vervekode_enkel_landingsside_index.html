@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bruk min KRON-vervekode – tusen takk!</title>
+  <meta name="description" content="Bruker du vervekoden får vi begge 200 kr i bonus! Tusen takk for støtten. Investering innebærer risiko, og historisk avkastning er ingen garanti for fremtidig avkastning." />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Bruk min KRON-vervekode – tusen takk!" />
+  <meta property="og:description" content="Bruker du vervekoden får vi begge 200 kr i bonus! Tusen takk for støtten." />
+  <meta property="og:image" content="og-kron-a4k5v.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:image" content="og-kron-a4k5v.png" />
+  <meta property="og:site_name" content="KRON-vervekode (uoffisiell)" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="theme-color" content="#1a1033" />
+
+  <style>
+    :root{
+      --bg: #0f0b1a;         /* dyp lilla/svart bakgrunn */
+      --card: #151125;       /* kortbakgrunn i mørk lilla */
+      --text: #f7f1ff;       /* lys tekst (magnolia) */
+      --muted: #c9c3d7;      /* sekundærtekst */
+      --accent: #7c3aed;     /* lilla accent */
+      --accent-strong:#6d28d9;
+      --border: #262339;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 50% -200px, rgba(124,58,237,.18), transparent), var(--bg);
+      color:var(--text);
+      line-height:1.5;
+    }
+    .container{max-width:960px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between; gap:12px;margin-bottom:24px}
+    .brand{display:flex;align-items:center;gap:10px}
+    .logo{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#7C3AED,#A78BFA);color:#0b0b0c}
+    .brand h1{font-size:18px;margin:0}
+    main{display:grid;gap:24px}
+
+    .hero{display:grid; gap:12px}
+    .title{font-size:clamp(28px,5vw,44px);line-height:1.1;margin:0;font-weight:800}
+    .subtitle{color:var(--muted);font-size:clamp(16px,2vw,18px);max-width:70ch}
+
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px}
+    .code-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+    .code-box{flex:1 1 240px;display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px dashed var(--border);border-radius:12px;padding:14px 16px;background:#0e0e10}
+    .code{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size:22px; letter-spacing:1px}
+    .badge{font-size:12px;color:var(--muted)}
+
+    .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:12px}
+    .btn{appearance:none;border:1px solid var(--border);background:#151517;color:var(--text);padding:12px 16px;border-radius:12px;cursor:pointer;font-weight:700;transition:transform .02s ease, background .2s ease, border-color .2s ease}
+    .btn:hover{background:#1a1a1d}
+    .btn:active{transform:translateY(1px)}
+    .btn.primary{background:var(--accent);color:#04150a;border-color:transparent}
+    .btn.primary:hover{background:var(--accent-strong)}
+
+    .grid{display:grid;grid-template-columns:1fr; gap:16px}
+    @media (min-width:900px){ .grid{grid-template-columns:1.2fr .8fr} }
+
+    .mini{font-size:13px;color:var(--muted)}
+
+    .share{display:flex;flex-wrap:wrap;gap:8px}
+    .share a,.share button{border:1px solid var(--border);background:#18181b;color:var(--text);padding:8px 12px;border-radius:10px;text-decoration:none;font-size:14px}
+
+    .faq{display:grid;gap:10px}
+    details{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px}
+    summary{cursor:pointer;font-weight:700}
+
+    footer{margin:36px 0;color:var(--muted);font-size:13px}
+    .ok{display:inline-flex;align-items:center;gap:8px}
+    .pill{display:inline-block;padding:2px 8px;border-radius:999px;background:#0f172a;border:1px solid var(--border);font-size:12px;color:var(--muted)}
+
+    .qr-wrap{display:grid;place-items:center;background:#0e0e10;border:1px dashed var(--border);border-radius:12px;padding:12px}
+    canvas{display:block}
+    .hidden{display:none}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo"><span>k</span></div>
+        <h1>KRON-vervekode (uoffisiell)</h1>
+      </div>
+      <span class="pill" id="clicks-pill" aria-live="polite">0 klikk</span>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2 class="title">Bruk min KRON‑vervekode</h2>
+        <p class="subtitle">Bruker du verve‑koden får vi begge <strong>200 kr i bonus!</strong> Tusen takk for støtten! ✨<br>Investering innebærer alltid risiko. Historisk avkastning er ingen garanti for fremtidig avkastning.</p>
+      </section>
+
+      <section class="grid">
+        <div class="card">
+          <div class="code-row" role="group" aria-label="Vervekode og handlinger">
+            <div class="code-box" aria-live="polite">
+              <div>
+                <div class="badge">Min vervekode</div>
+                <div class="code" id="code">a4k5v<\/div>
+              </div>
+              <button class="btn" id="copyBtn" aria-label="Kopier vervekode">Kopier</button>
+            </div>
+          </div>
+          <div class="btns">
+            <a class="btn primary" id="openLink" href="#" target="_blank" rel="noopener">Åpne KRON med koden</a>
+            <button class="btn" id="shareBtn">Del denne siden</button>
+          </div>
+          <p class="mini" id="hint">Slik gjør du: 1) Trykk <em>Kopier</em> 2) Åpne KRON 3) Lim inn ved registrering.</p>
+        </div>
+
+        <div class="card">
+          <div class="badge" style="margin-bottom:8px">Scan &amp; del</div>
+          <div class="qr-wrap">
+            <div id="qrcode" role="img" aria-label="QR-kode til vervelenken"></div>
+          </div>
+          <div class="mini" style="margin-top:10px">Scan QR‑koden for å åpne vervelenken på mobilen, eller del lenken under:</div>
+          <div class="share" id="shareLinks" aria-label="Delingsknapper"></div>
+        </div>
+      </section>
+
+      <section class="faq">
+        <details>
+          <summary>Hva er dette?</summary>
+          <div class="mini">En enkel, uoffisiell landingsside for å dele min KRON‑vervekode. Når du bruker koden, kan jeg få vervebonus fra KRON. Denne siden er ikke tilknyttet eller godkjent av KRON.</div>
+        </details>
+        <details>
+          <summary>Er det noen fordeler for deg som bruker koden?</summary>
+          <div class="mini">Eventuelle fordeler bestemmes av KRONs til enhver tid gjeldende vilkår for verving. Ingen løfter gis her – sjekk KRONs app/nettside for detaljer.</div>
+        </details>
+        <details>
+          <summary>Personvern</summary>
+          <div class="mini">Denne siden lagrer kun et lokalt antall klikk i din egen nettleser (localStorage) og sender ingen data til meg. Ønsker du måling, kan du legge inn f.eks. Plausible eller Google Analytics – se kommentar i kildekoden.</div>
+        </details>
+        <details>
+          Investering innebærer risiko. Historisk avkastning er ingen garanti for fremtidig avkastning. Gjør egne vurderinger før du investerer. <br>For ordens skyld: I tråd med KRONs egne regler skal innhold delt i sosiale medier som inneholder vervekode eller invitasjonslenke merkes som <strong>reklame/annonse</strong>.
+        </details>
+      </section>
+
+      <footer>
+        <div>© <span id="year"></span> – Laget med ❤️ for enkel deling. Ikke tilknyttet KRON.</div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- QRCode lib (liten) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-Mn0P6wA0b0nRd0m7YI1hQ6v4n1U1l2zv0g1Cz3n5s1m0mE9m9Qkq3YVv1WJbV2m5r2yNq4r7YwJH6qKk8O8rHw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    // === KONFIGURER HER ===
+    // 1) Din vervekode (for visning). 2) Din offisielle vervelenke fra KRON (for klikk).
+    // Hvis URL-en har ?code=ABC vil den overstyre CODE, så du kan lage varianter.
+    const DEFAULT_CODE = "a4k5v"; // <-- BYTT TIL DIN KODE
+    const DEFAULT_REF_URL = "https://kron.no/app/invitert/a4k5v"; // <-- BYTT TIL DIN OFFISIELLE VERVE-LENKE FRA KRON
+
+    // Valgfritt: legg til UTM-sporing på din EGEN sideadresse (ikke KRON-lenken) når du deler.
+
+    // === INGEN ENDRING NEDENFOR ER NØDVENDIG ===
+    const params = new URLSearchParams(location.search);
+    const CODE = (params.get('code') || DEFAULT_CODE).trim();
+    const REF_URL = (params.get('ref') || DEFAULT_REF_URL).trim();
+
+    // Sett inn i UI
+    const codeEl = document.getElementById('code');
+    const copyBtn = document.getElementById('copyBtn');
+    const openLink = document.getElementById('openLink');
+    const shareBtn = document.getElementById('shareBtn');
+    const shareLinks = document.getElementById('shareLinks');
+    const clicksPill = document.getElementById('clicks-pill');
+
+    codeEl.textContent = CODE;
+    openLink.href = REF_URL;
+
+    // Klikkteller lokalt (anonymt, kun i din nettleser)
+    const KEY = 'kron-ref-clicks';
+    let clicks = Number(localStorage.getItem(KEY) || '0');
+    function renderClicks(){
+      clicksPill.textContent = clicks + (clicks === 1 ? ' klikk' : ' klikk');
+    }
+    renderClicks();
+    openLink.addEventListener('click', () => {
+      clicks++; localStorage.setItem(KEY, String(clicks)); renderClicks();
+    });
+
+    // Kopier kode
+    copyBtn.addEventListener('click', async () => {
+      try{
+        await navigator.clipboard.writeText(CODE);
+        copyBtn.textContent = 'Kopiert!';
+        setTimeout(()=>copyBtn.textContent='Kopier',1200);
+      }catch(e){
+        // Fallback
+        const t = document.createElement('textarea');
+        t.value = CODE; document.body.appendChild(t); t.select();
+        document.execCommand('copy'); t.remove();
+        copyBtn.textContent = 'Kopiert!';
+        setTimeout(()=>copyBtn.textContent='Kopier',1200);
+      }
+    });
+
+    // Del side (Web Share API)
+    shareBtn.addEventListener('click', async () => {
+      const shareData = {
+        title: 'KRON‑vervekode',
+        text: 'Bruk min KRON‑vervekode (vi får begge 200 kr!): ' + CODE,
+        url: location.href
+      };
+      if(navigator.share){
+        try{ await navigator.share(shareData); }catch{ /* avbrutt */ }
+      } else {
+        // fallback: kopier URL
+        try{
+          await navigator.clipboard.writeText(location.href);
+          shareBtn.textContent = 'Lenke kopiert!';
+          setTimeout(()=>shareBtn.textContent='Del denne siden',1200);
+        }catch{}
+      }
+    });
+
+    // QR-kode av KRON-lenken (så folk åpner riktig sted)
+    new QRCode(document.getElementById('qrcode'), {
+      text: REF_URL,
+      width: 196,
+      height: 196,
+      colorDark : "#f4f4f5",
+      colorLight : "#0e0e10",
+      correctLevel : QRCode.CorrectLevel.M
+    });
+
+    // Delingsknapper (for denne siden)
+    const pageUrl = encodeURIComponent(location.href);
+    const pageText = encodeURIComponent('Bruk min KRON‑vervekode: ' + CODE);
+    const links = [
+      {name:'WhatsApp', href:`https://api.whatsapp.com/send?text=${pageText}%20${pageUrl}`},
+      {name:'Messenger', href:`https://www.facebook.com/dialog/send?link=${pageUrl}&app_id=87741124305`},
+      {name:'Facebook', href:`https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`},
+      {name:'X', href:`https://twitter.com/intent/tweet?text=${pageText}&url=${pageUrl}`},
+      {name:'Telegram', href:`https://t.me/share/url?url=${pageUrl}&text=${pageText}`},
+      {name:'E‑post', href:`mailto:?subject=Min%20KRON‑vervekode&body=${pageText}%0A${pageUrl}`}
+    ];
+    links.forEach(l=>{
+      const a=document.createElement('a'); a.textContent=l.name; a.href=l.href; a.target='_blank'; a.rel='noopener'; shareLinks.appendChild(a);
+    });
+
+    // År i footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // --- ANALYTICS (valgfritt) ---
+    // For Plausible: legg inn under, bytt example.com med ditt domene
+    // <script defer data-domain="example.com" src="https://plausible.io/js/script.js"></script>
+  </script>
+</body>
+</html>
